@@ -12,13 +12,13 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: "http://pentimento-mp.ellerystars.xyz/api/mock_paintings.json",
+      url: "http://192.168.50.2:3000/api/v1/arts/",
       method: 'GET',
       success(res) {
         const artworks = res.data;
         console.log(3242342, artworks);
         page.setData({
-          artworks
+          artworks: artworks
         });
 
         wx.hideToast();
@@ -54,11 +54,12 @@ Page({
   onShareAppMessage: function () {
 
   },
-  showWorkspace(e) {
-    const workspaceId = e.currentTarget.dataset.id;
+  showArtdetail(e) {
+    const artworksId = e.currentTarget.dataset.id;
+    console.log(artworksId);
 
     wx.navigateTo({
-      url: `/pages/art_details/art_details?id=${workspaceId}`,
+      url: `/pages/art_details/art_details?id=${artworksId}`,
     });
   }
 })
