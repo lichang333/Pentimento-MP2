@@ -37,13 +37,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": 0,
 					"name": "art_detail",
 					"pathName": "pages/art_details/art_details",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Arts Index Page",
+					"pathName": "pages/arts/arts"
 				}
 			]
 		}
