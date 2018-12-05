@@ -1,0 +1,46 @@
+<!--pages/workspaces/workspaces.wxml-->
+
+<!-- card flex -->
+<view style="display:flex; flex-wrap:wrap;"></view>
+  <view class="flex-wrp">
+    <view class="flex-item;">
+      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://images.unsplash.com/photo-1515405295579-ba7b45403062');">
+  <view class="card-category">Workspace Category</view>
+  </view>
+  
+
+  
+</view>
+
+
+
+
+
+
+
+
+<!-- 
+  <view class="flex-item">
+    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/toronto.jpg');">
+      <view class="card-category">Workspace Category
+</view>
+      
+      <view class="card-description">
+        <h2>Workspace Name</h2>
+      </view>
+    </view>
+  </view>
+
+    <view class="flex-item">
+    <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://blog.ellerystars.com/wework_placeholder/tokyo.jpg');">
+      <view class="card-category">Workspace Category</view>
+      <view class="card-description">
+        <h2>Workspace Name</h2>
+      </view>
+    </view> -->
+  <!-- </view> -->
+
+</view>
+
+
+
