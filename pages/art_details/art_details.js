@@ -7,7 +7,24 @@ Page({
   data: {
 
   },
+  onLoad: function (options) {
+    this.setData({ spaceId: options.id })
 
+    let that = this;
+
+    wx.request({
+      url: `http://pentimento-mp.ellerystars.xyz/api/mock_paintings.json/`,
+      method: 'GET',
+      success(res) {
+        const art = res.data;
+        that.setData({
+          art: art
+        });
+        wx.hideToast();
+        console.log(453454, art);
+      }
+    });
+  },
   /**
    * Lifecycle function--Called when page load
    */

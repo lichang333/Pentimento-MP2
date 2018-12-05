@@ -14,7 +14,10 @@ const app = getApp()
 
 Page({
   data: {
-
+    button: {
+      name: 'fade',
+      color: 'primary'
+    }
   },
   //事件处理函数
   bindViewTap: function() {
@@ -50,6 +53,30 @@ Page({
       })
     }
   },
+    toggle: function (e) {
+      console.log(e);
+      var anmiaton = e.currentTarget.dataset.class;
+      var that = this;
+      that.setData({
+        animation: anmiaton
+      })
+      setTimeout(function () {
+        that.setData({
+          animation: ''
+        })
+      }, 1000)
+    },
+    toggleDelay: function () {
+      var that = this;
+      that.setData({
+        toggleDelay: true
+      })
+      setTimeout(function () {
+        that.setData({
+          toggleDelay: false
+        })
+      }, 1000)
+    },
   getUserInfo: function(e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
@@ -58,9 +85,13 @@ Page({
       hasUserInfo: true
     })
   },
-  goToArtsPage: function () {
-    wx.redirectTo({
-      url: '/pages/arts/arts'
-    })
+  goToArtsPage: function (e) {
+    console.log(this)
+    this.toggle(e)
+    
+    setTimeout(() => {
+      wx.redirectTo({
+        url: '/pages/arts/arts'
+      })}, 850);
   }
 })
