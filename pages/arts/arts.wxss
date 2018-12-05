@@ -6,23 +6,9 @@ h1 {
 }
 
 .body {
-  background-color: #505050;
+  background-color: #66747F;
 }
 
-.card {
-  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-  background-size: cover !important;
-  background-position: center;
-  color: white;
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 600rpx;
-  height: 500rpx;
-  border-radius: 3px;
-}
 .card-user {
   position: absolute;
   right: 10px;
@@ -142,5 +128,34 @@ h1 {
   opacity: 0.7;
   z-index: 99;
 }
+.card {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 6%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 650rpx;
+  height: 500rpx;
+  border-radius: 3px;
+}
 
-
+.card-desc {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  text-align:center;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 6%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 650rpx;
+  height: 180rpx;
+  border-radius: 3px;
+  /* background-color: #5B728A; */
+}
