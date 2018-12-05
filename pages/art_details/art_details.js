@@ -13,7 +13,7 @@ Page({
     let that = this;
 
     wx.request({
-      url: `http://pentimento-mp.ellerystars.xyz/api/mock_paintings.json/`,
+      url: `http://pentimento-mp.ellerystars.xyz/api/mock_paintings.json/{options.id}.json`,
       method: 'GET',
       success(res) {
         const art = res.data;

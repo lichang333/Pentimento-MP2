@@ -5,7 +5,7 @@ h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.body {
+page {
   background-color: #66747F;
 }
 
