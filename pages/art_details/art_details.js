@@ -8,29 +8,30 @@ Page({
 
   },
   onLoad: function (options) {
-    this.setData({ spaceId: options.id })
+    this.setData({ artworksId: options.id })
 
     let that = this;
-
+    console.log('making request')
     wx.request({
-      url: `http://pentimento-mp.ellerystars.xyz/api/mock_paintings.json/`,
+      url: `http://192.168.50.99:3000/api/v1/arts/${options.id}`,
       method: 'GET',
       success(res) {
+        console.log(res);
         const art = res.data;
         that.setData({
-          art: art
+          art
         });
         wx.hideToast();
-        console.log(453454, art);
+        console.log(art);
+      },
+      fail(res) {
+        console.log(res)
       }
     });
   },
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-
-  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
