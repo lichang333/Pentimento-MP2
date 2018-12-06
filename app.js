@@ -1,6 +1,9 @@
 //app.js
 App({
   onLaunch: function () {
+    const host = "http://192.168.50.99:3003/"
+    console.log('processing login')
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -9,6 +12,20 @@ App({
     // 登录
     wx.login({
       success: res => {
+        console.log(res)
+
+        wx.request({
+          url: host + 'login',
+          method: 'post',
+          data: {
+            code: res.code
+          },
+          
+          success:res => {
+            console.log(res)
+            this.globalData.userId = res.data.userId
+          }
+        })
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -33,7 +50,5 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
-  }
+  globalData: {}
 })
