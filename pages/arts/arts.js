@@ -12,7 +12,7 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: "http://192.168.50.2:3000/api/v1/arts/",
+      url: "http://192.168.50.99:3000/api/v1/arts/",
       method: 'GET',
       success(res) {
         const artworks = res.data;
