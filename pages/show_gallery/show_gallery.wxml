@@ -1,0 +1,19 @@
+<!--pages/show_gallery/show_gallery.wxml-->
+
+
+<view style="display:flex; flex-wrap:wrap;"></view>
+  <view class="flex-wrp">
+    <view class="flex-item;">
+      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.photo}}');">
+  <view class="card-category">{{art.title}}</view>
+  </view>
+  <h2>Description</h2>
+  <view>{{art.description}}</view>
+
+  <h2>Artist #</h2>
+  <view>{{art.artist_id}}</view>
+
+  <h2>Gallery #</h2>
+  <view>{{art.gallery_id}}</view>
+  </view>
+</view>

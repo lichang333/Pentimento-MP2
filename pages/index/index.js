@@ -91,7 +91,7 @@ Page({
     
     setTimeout(() => {
       wx.redirectTo({
-        url: '/pages/arts/arts'
+        url: '/pages/galleries/galleries'
       })}, 850);
   }
 })

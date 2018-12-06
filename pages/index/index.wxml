@@ -3,6 +3,6 @@
   <view class="banner-content" >
     <text class="h1" style="opacity:0.95;font-size: 40px; font-weight:385; ">Pentimento</text>
     <text class="subtitle" style="opacity:0.68;font-size: 20px;">\nFind what you love.</text>
-    <button bindtap="goToArtsPage" class="primary btn animation-{{animation==button.name? button.name :''}} animation-reverse m-sm basis-sm" data-class="{{button.name}}">View Artwork</button>
+    <button bindtap="goToArtsPage" class="primary btn animation-{{animation==button.name? button.name :''}} animation-reverse m-sm basis-sm" data-class="{{button.name}}">Start Here</button>
   </view>
 </view>

@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -48,7 +48,13 @@
 				{
 					"id": -1,
 					"name": "Arts Index Page",
-					"pathName": "pages/arts/arts"
+					"pathName": "pages/arts/arts",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Galleries Index Page",
+					"pathName": "pages/galleries/galleries"
 				}
 			]
 		}
