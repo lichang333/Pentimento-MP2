@@ -1,6 +1,6 @@
 <!--pages/galleries/galleries.wxml-->
 
-<view>Your Galleries Here</view>
+<view class="title">Your Galleries Here</view>
 
 <!-- Add Logic, if not gallereies display this message -->
 
@@ -16,6 +16,6 @@
   </block>
 </view>
 
-
+<!-- <button class="float" bindtap=""><i src="{{src}}"></i></button> -->
 
 <button class="float" bindtap=""><i src="{{src}}"></i></button>

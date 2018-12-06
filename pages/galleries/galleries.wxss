@@ -165,18 +165,34 @@ page {
 }
 
 .float{
+  display: relative;
 	position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:rgb(57, 131, 112);
+	bottom:2%;
+	right:4%;
+	background-color:#547AA5;
 	color:rgb(255, 255, 255);
 	border-radius:50px;
 	text-align:center;
+  opacity:0.85;
 	box-shadow: 2px 2px 3px rgb(78, 69, 69);
+  justify-content: center;
+  align-items: center;
+  background-image: url("http://pentimento-mp.ellerystars.xyz/img/camera.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  /* background-size:50px; */
 }
 
 .my-float {
 	margin-top:22px;
+}
+.title{
+  margin-top: 3%;
+  font-weight: 550;
+  color:#f0f0f0;
+  text-align: center !important;
+  font-size: 1.3rem;
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
