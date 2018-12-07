@@ -1,0 +1,21 @@
+<!--pages/galleries/galleries.wxml-->
+
+<view class="title">Your Galleries Here</view>
+
+<!-- Add Logic, if not gallereies display this message -->
+
+<view class="body">
+  <block wx:for='{{ galleries }}'>
+    <view class="flex-item">
+      <view style="text-align:center; color:#f0f0f0; font-size:105%">{{item.title}}</view>
+      <view bindtap="showGallery" data-id='{{item.id}}'class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+      </view>
+      
+      <view margin-bottom="250rpx" class="card-desc">{{item.name}}</view>
+    </view>
+  </block>
+</view>
+
+<!-- <button class="float" bindtap=""><i src="{{src}}"></i></button> -->
+
+<button class="float" bindtap=""><i src="{{src}}"></i></button>

@@ -1,0 +1,198 @@
+/* pages/galleries/galleries.wxss */
+h1 {
+  text-align: center;
+  font-size: 80rpx;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+page {
+  background-color: #66747F;
+}
+
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}
+
+.flex-wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  /* flex: 50%; */
+  justify-content: center;
+}
+
+.extend-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*FOR BOTTOM TAB  */
+
+.blank-item {
+  height: 70px;
+}
+
+.salmon-container {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.love-container {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.heart-avatar {
+  width: 10px;
+  height: 10px;
+  padding-right: 5px;
+}
+
+.avatar-back {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.avatar-tab {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 45px;
+  border-top: 0.5px solid #dddddd;
+}
+
+.nav-back {
+  position: fixed;
+  bottom: 0px;
+  left: -10px;
+  width: 40px;
+  /* background-color: #999999; */
+  overflow: hidden;
+  height: 45px;
+  /* border: 0.5px solid #dddddd; */
+  color: white;
+  opacity: 0.7;
+  z-index: 99;
+}
+.card {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 6%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 650rpx;
+  height: 500rpx;
+  border-radius: 3px;
+  margin-bottom: 0px;
+}
+
+.card-desc {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  text-align:center;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin: 6%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 650rpx;
+  height: 180rpx;
+  border-radius: 3px;
+  margin-top:0px;
+  padding-top:8px;
+  /* background-color: #5B728A; */
+}
+
+.float{
+  display: relative;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:2%;
+	right:4%;
+	background-color:#547AA5;
+	color:rgb(255, 255, 255);
+	border-radius:50px;
+	text-align:center;
+  opacity:0.85;
+	box-shadow: 2px 2px 3px rgb(78, 69, 69);
+  justify-content: center;
+  align-items: center;
+  background-image: url("http://pentimento-mp.ellerystars.xyz/img/camera.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  /* background-size:50px; */
+}
+
+.my-float {
+	margin-top:22px;
+}
+.title{
+  margin-top: 3%;
+  font-weight: 550;
+  color:#f0f0f0;
+  text-align: center !important;
+  font-size: 1.3rem;
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}

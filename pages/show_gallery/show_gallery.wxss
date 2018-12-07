@@ -1,0 +1,393 @@
+/* pages/show_gallery/show_gallery.wxss */
+@import "../../icon.wxss";
+@import "../../colorui.wxss";
+
+
+/* pages/art_details/art_details.wxss */
+page {
+  background-color: #647480;
+  
+}
+pages/workspaces/workspaces.wxss
+h1 {
+  text-align: center;
+  font-size: 80rpx;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bull-icon{
+  width:80rpx;
+  height: 80rpx;
+}
+
+/*分割线样式*/
+.divLine{
+ /* background: #E0E3DA; */
+ width: 100%;
+ /* height: 5rpx; */
+ margin-top: 20rpx;
+}
+
+
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  border-radius: 50%;
+}
+.card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover {
+  opacity: 0.1;
+}
+
+.flex-wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  /* flex: 50%; */
+  justify-content: center;
+}
+
+
+
+
+
+.extend-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*FOR BOTTOM TAB  */
+
+.blank-item {
+  height: 70px;
+}
+
+.salmon-container {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.love-container {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.heart-avatar {
+  width: 10px;
+  height: 10px;
+  padding-right: 5px;
+}
+
+.avatar-back {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.avatar-tab {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 50%; */
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  height: 45px;
+  border-top: 0.5px solid #dddddd;
+}
+
+.nav-back {
+  position: fixed;
+  bottom: 0px;
+  left: -10px;
+  width: 40px;
+  /* background-color: #999999; */
+  overflow: hidden;
+  height: 45px;
+  /* border: 0.5px solid #dddddd; */
+  color: white;
+  opacity: 0.7;
+  z-index: 99;
+}
+/*FOR BOTTOM TAB  */
+
+.post-align {
+  text-align: center;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+
+
+
+.discount-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+   text-align: center; 
+   opacity: 0.8;
+}
+
+.card {
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 600rpx;
+  height: 337rpx;
+  border-radius: 3px;
+  margin-left: 75rpx;
+}
+
+.flex-wrp {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item-head {
+  flex: 0 0 60px;
+  
+}
+
+.flex-item-pic {
+  flex: 0 0 250px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.flex-item-msg {
+  flex: 0 0 15px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.flex-item-location {
+  flex: 0 0 20px;
+  font-size: 8px;
+  text-align: center;
+  color: #888888;
+  margin-bottom: 5px;
+}
+
+.flex-item-bottom {
+  flex: 0 0 30px;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.flex-for-name-time {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 5px;
+}
+
+.username-font-size-xs {
+  font-size: 10px;
+}
+
+.username-font-size-sm {
+  font-size: 12px;
+}
+
+
+.username-font-size-nm {
+  font-size: 16px;
+}
+
+.detail-font-head {
+  font-size: 10px;
+  color: #888888;
+}
+
+.card-head-between-name-discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
+
+.flex-item-name {
+  flex: 0 0 auto;
+}
+
+.card-head-right {
+  flex: 1 0 auto;
+}
+
+.discount-text {
+  color: black;
+  font-size: 16px;
+   padding-top: 12px; 
+}
+
+.flex-item-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-bottom-item {
+  color: #333333;
+  font-size: 12px;
+}
+
+/* FOR LOADING CARDS  */
+
+
+.FB-Loading-Card{
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border-bottom: rgb(208, 209, 213) solid 1px;
+  border-left: rgb(223, 224, 228) solid 1px;
+  border-right-color: rgb(223, 224, 228) solid 1px;
+  border-top-color: rgb(229, 230, 233) solid 1px;
+  display: block;
+   height: 300px;
+  /* width: 494px;  */
+  padding: 12px;
+}
+.FB-Loading-FirstBox{
+  width:100%;
+  height:30px;
+}
+.FB-Loading-FirstBox-Img{
+  position:relative;
+  left:0;
+  background-color: #CCC;
+  height: 40px;
+  width: 40px;
+  animation-name: shine; 
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.FB-Loading-FirstBox-1stRow, .FB-Loading-FirstBox-2ndRow, .FB-Loading-FirstBox-3rdRow, .FB-Loading-FirstBox-4thRow, .FB-Loading-FirstBox-5thRow{
+  position:relative;
+  background-color: #CCC;
+  height: 6px;
+  animation-name: shine; 
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes shine {
+    from {transition:none;}
+    to {background-color:#f6f7f8;transition: all 0.3s ease-out;}
+}
+.FB-Loading-FirstBox-1stRow{
+  left:50px;
+  top:-33px;
+  width: 25%;
+}
+.FB-Loading-FirstBox-2ndRow{
+  left:50px;
+  top:-20px;
+  width: 15%;
+}
+.FB-Loading-FirstBox-3rdRow{
+  left:0px;
+  top:30px;
+  width: 80%;
+}
+.FB-Loading-FirstBox-4thRow{
+  left:0px;
+  top:45px;
+  width: 90%;
+}
+.FB-Loading-FirstBox-5thRow{
+  left:0px;
+  top:60px;
+  width: 50%;
+}
+
+.pull-down-center {
+  text-align: center;
+}
+
+.pull-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.bottom-end{
+  margin-bottom: 30rpx;
+}
+
+.star-solid{
+  background-image: '../../lib/assets/images/icon/star-solid.png';
+}
+
+.card {
+  display: flex;
+  position: relative;
+
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  justify-content: space-around;
+  margin: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 700rpx;
+  height: 800rpx;
+  border-radius: 3px;
+  margin-bottom: 200rpx;
+}
+
+
