@@ -5,10 +5,16 @@
   <view class="flex-wrp">
     <view class="flex-item;">
       <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.photo}}');">
-  <view class="card-category">{{art.title}}</view>
+  <view class="art-title">{{art.title}}</view>
+  <view class="art-description">{{art.description}}</view>
   </view>
-  <h2>Description</h2>
-  <view>{{art.description}}</view>
+
+  
+
+
+
+  <view>Gallery Address:{{art.address}}</view>
+
 
   <h2>Artist #</h2>
   <view>{{art.artist_id}}</view>
