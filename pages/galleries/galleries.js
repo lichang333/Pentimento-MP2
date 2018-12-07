@@ -81,5 +81,12 @@ Page({
     wx.navigateTo({
       url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
     });
+  },
+  callQRcode: function () {
+    wx.scanCode({
+      success: (res) => {
+        console.log(res)
+      }
+    });
   }
 })
