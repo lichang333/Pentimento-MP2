@@ -1,7 +1,6 @@
 /* pages/show_gallery/show_gallery.wxss */
 @import "../../icon.wxss";
 @import "../../colorui.wxss";
-@import "../../weui.wxss";
 
 /* pages/art_details/art_details.wxss */
 page {
@@ -389,7 +388,7 @@ h1 {
   position: absolute !important;
   top: 12px;
   left: 12px;
-  font-size: 22px;
+  font-size: 23px;
   text-transform: capitalize;
 }
 
