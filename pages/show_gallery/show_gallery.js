@@ -8,12 +8,15 @@ Page({
     ]
   },
   showModal: function (e) {
+    console.log(333,"show modal")
     var showName = e.currentTarget.dataset.modal;
+    console.log(444,showName)
     this.setData({
       modalName: showName
     })
   },
   closeModal: function (e) {
+    console.log(5555555,'close modal')
     this.setData({
       modalName: null
     })
