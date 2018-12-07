@@ -386,8 +386,8 @@ h1 {
 
 .art-title {
   position: absolute !important;
-  top: 12px;
-  left: 12px;
+  top: 13px;
+  left: 13px;
   font-size: 23px;
   text-transform: capitalize;
   font-weight: bold;
@@ -395,8 +395,8 @@ h1 {
 
 .art-description {
   position: absolute !important;
-  bottom: 12px;
-  left: 12px;
+  bottom: 13px;
+  left: 13px;
   font-size: 16px;
-  text-transform: capitalize;
+  text-transform: capitalize;  
 }

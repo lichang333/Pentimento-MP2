@@ -1,10 +1,29 @@
 <view class="body">
   <block wx:for='{{ artworks }}'>
     <view class="flex-item">
-      <view bindtap="" data-id='{{item.id}}'class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+      <view bindtap='showModal' data-modal="defualtmodal" data-id='{{item.id}}' data-description='{{item.description}}' data-title='{{item.title}}' class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
       <view class="art-title">{{item.title}}</view>
       <view class="art-description">{{item.description}}</view>
       </view>
+    
+
+
+    <view class="modal-box {{modalName=='defualtmodal'?'cur':''}}">
+  <view class='modal-dialog'>
+    <view class="modal-title">
+      <text>{{item.title}}</text>
+      <view class='bar-close badge danger round' bindtap='closeModal'>
+        <text class='iconfont icon-close'></text>
+      </view>
     </view>
+    <view class='modal-bd'>
+    <view>{{item.description}}</view>
+    </view>
+  </view>
+</view>
+
+
+
+</view>
   </block>
 </view>
