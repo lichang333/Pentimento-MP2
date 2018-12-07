@@ -77,6 +77,7 @@ Page({
   showGallery(e) {
     const galleryId = e.currentTarget.dataset.id;
     console.log(galleryId);
+    console.log(`Going to: /pages/show_gallery/show_gallery?id=${galleryId}`)
 
     wx.navigateTo({
       url: `/pages/show_gallery/show_gallery?id=${galleryId}`,

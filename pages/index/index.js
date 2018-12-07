@@ -86,6 +86,7 @@ Page({
     })
   },
   goToArtsPage: function (e) {
+    console.log("Going to: /pages/galleries/galleries")
     console.log(this)
     this.toggle(e)
     
