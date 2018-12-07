@@ -1,85 +1,65 @@
-// pages/show_gallery/show_gallery.js
+// pages/workspaces/arts.js
+let app = getApp()
+
 Page({
 
-  /**
-   * Page initial data
-   */
   data: {
 
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
   onLoad: function (options) {
-    this.setData({ artworksId: options.id })
+    let page = this;
 
-    let that = this;
-    console.log('making request')
+    //Request API to get workspace
     wx.request({
-      url: `http://192.168.50.99:3000/api/v1/arts/${options.id}`,
+      url: "http://192.168.50.99:3000/api/v1/arts/",
       method: 'GET',
       success(res) {
-        console.log(res);
-        const art = res.data;
-        that.setData({
-          art
+        const artworks = res.data;
+        console.log(3242342, artworks);
+        page.setData({
+          artworks: artworks
         });
+
         wx.hideToast();
-        console.log(art);
-      },
-      fail(res) {
-        console.log(res)
       }
     });
+
   },
 
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
   onReady: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
   onShow: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page hide
-   */
   onHide: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page unload
-   */
   onUnload: function () {
 
   },
 
-  /**
-   * Page event handler function--Called when user drop down
-   */
   onPullDownRefresh: function () {
 
   },
 
-  /**
-   * Called when page reach bottom
-   */
   onReachBottom: function () {
 
   },
 
-  /**
-   * Called when user click on the top right corner to share
-   */
   onShareAppMessage: function () {
 
+  },
+  showArtdetail(e) {
+    const artworksId = e.currentTarget.dataset.id;
+    console.log(artworksId);
+
+    wx.navigateTo({
+      url: `/pages/art_details/art_details?id=${artworksId}`,
+    });
   }
 })

@@ -377,11 +377,11 @@ h1 {
   color: white;
   justify-content: space-around;
   margin: 13px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   width: 700rpx;
   height: 800rpx;
-  border-radius: 3px;
-  margin-bottom: 200rpx;
+  border-radius: 5px;
+  margin-bottom: 65rpx;
 }
 
 .art-title {
@@ -390,12 +390,13 @@ h1 {
   left: 12px;
   font-size: 23px;
   text-transform: capitalize;
+  font-weight: bold;
 }
 
 .art-description {
   position: absolute !important;
   bottom: 12px;
   left: 12px;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: capitalize;
 }

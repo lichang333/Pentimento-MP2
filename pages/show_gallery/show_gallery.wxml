@@ -1,14 +1,10 @@
-<!--pages/show_gallery/show_gallery.wxml-->
-
-
-<view style="display:flex; flex-wrap:wrap;"></view>
-  <view class="flex-wrp">
-    <view class="flex-item;">
-      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.photo}}');">
-  <view class="art-title">{{art.title}}</view>
-  <view class="art-description">{{art.description}}
-  
-  </view>
-  </view>
-  </view>
+<view class="body">
+  <block wx:for='{{ artworks }}'>
+    <view class="flex-item">
+      <view bindtap="" data-id='{{item.id}}'class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+      <view class="art-title">{{item.title}}</view>
+      <view class="art-description">{{item.description}}</view>
+      </view>
+    </view>
+  </block>
 </view>
