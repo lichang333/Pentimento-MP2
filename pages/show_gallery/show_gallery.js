@@ -17,7 +17,7 @@ Page({
     let page = this;
 
     wx.request({
-      url: `http://192.168.50.99:3002/api/v1/galleries/${options.id}`,
+      url: `http://penti-api.wogengapp.cn/api/v1/galleries/${options.id}`,
       method: 'GET',
       success(res) {
         const gallery = res.data;
@@ -31,7 +31,7 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: "http://192.168.50.99:3000/api/v1/arts/",
+      url: `http://penti-api.wogengapp.cn/api/v1/galleries/${options.id}/arts`,
       method: 'GET',
       success(res) {
         const artworks = res.data;
