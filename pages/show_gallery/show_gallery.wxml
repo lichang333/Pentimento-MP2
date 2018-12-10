@@ -1,3 +1,12 @@
+<image bindtap="enlargeImage" data-src='{{ gallery.photo }}' src='{{ gallery.photo }}'></image>
+
+<view>{{ gallery.name }}</view>
+<view>Address: {{ gallery.address }}</view>
+<view>Phone Number: {{ gallery.phone_number }}</view>
+<view>Description: {{ gallery.description }}</view>
+
+
+<h1 class="align-center">Gallery Art Pieces</h1>
 <view class="body">
 
   <!-- Block for Artwork items -->
@@ -5,7 +14,7 @@
   
     <!-- Flex item -->
     <view class="flex-item">
-      <view bindtap='showModal' data-modal="defualtmodal" data-id='{{item.id}}' data-description='{{item.description}}' data-title='{{item.title}}' class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+      <view bindtap="enlargeImage" data-src="{{ item.photo }}" data-modal="defualtmodal" data-id='{{item.id}}' data-description='{{item.description}}' data-title='{{item.title}}' class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
         <view class="art-title">{{item.title}}</view>
         <view class="art-description">{{item.description}}</view>
 
