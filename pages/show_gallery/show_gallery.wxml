@@ -1,19 +1,41 @@
-<!--pages/show_gallery/show_gallery.wxml-->
+<view class="body">
 
+  <!-- Block for Artwork items -->
+  <block wx:for='{{ artworks }}'>
+  
+    <!-- Flex item -->
+    <view class="flex-item">
+      <view bindtap='showModal' data-modal="defualtmodal" data-id='{{item.id}}' data-description='{{item.description}}' data-title='{{item.title}}' class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+        <view class="art-title">{{item.title}}</view>
+        <view class="art-description">{{item.description}}</view>
 
-<view style="display:flex; flex-wrap:wrap;"></view>
-  <view class="flex-wrp">
-    <view class="flex-item;">
-      <view class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('{{art.photo}}');">
-  <view class="card-category">{{art.title}}</view>
-  </view>
-  <h2>Description</h2>
-  <view>{{art.description}}</view>
+      </view>
+    </view>
+     <!-- Flex item -->
 
-  <h2>Artist #</h2>
-  <view>{{art.artist_id}}</view>
+    <!-- Modal Box -->
+    <view class="modal-box {{modalName=='defualtmodal' ? 'cur' : '' }}">
+      <view class='modal-dialog'>
 
-  <h2>Gallery #</h2>
-  <view>{{art.gallery_id}}</view>
-  </view>
+        <!-- Modal title -->
+        <view class="modal-title">
+          <text>{{item.title}}</text>
+          <view class='bar-close badge danger round' bindtap='closeModal'>
+            <text class='iconfont icon-close'></text>
+          </view>
+        </view>
+
+        <!-- Modal Body -->
+        <view class='modal-bd'>
+          <view>{{item.description}}</view>
+        </view>
+
+      </view>
+
+    </view>
+    <!-- Modal Box -->
+
+</block>
+<!-- Block for Artwork items -->
+
 </view>

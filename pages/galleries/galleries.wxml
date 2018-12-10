@@ -1,6 +1,6 @@
 <!--pages/galleries/galleries.wxml-->
 
-<view class="title">Your Galleries Here</view>
+<view class="title">Your Galleries</view>
 
 <!-- Add Logic, if not gallereies display this message -->
 

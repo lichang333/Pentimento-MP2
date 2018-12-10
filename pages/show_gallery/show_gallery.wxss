@@ -2,11 +2,9 @@
 @import "../../icon.wxss";
 @import "../../colorui.wxss";
 
-
 /* pages/art_details/art_details.wxss */
 page {
   background-color: #647480;
-  
 }
 pages/workspaces/workspaces.wxss
 h1 {
@@ -165,9 +163,6 @@ h1 {
   margin-left: 5px;
   margin-top: 5px;
 }
-
-
-
 
 .discount-avatar {
   width: 50px;
@@ -376,18 +371,32 @@ h1 {
 .card {
   display: flex;
   position: relative;
-
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   color: white;
   justify-content: space-around;
   margin: 13px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   width: 700rpx;
   height: 800rpx;
-  border-radius: 3px;
-  margin-bottom: 200rpx;
+  border-radius: 5px;
+  margin-bottom: 65rpx;
 }
 
+.art-title {
+  position: absolute !important;
+  top: 13px;
+  left: 13px;
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
 
+.art-description {
+  position: absolute !important;
+  bottom: 13px;
+  left: 13px;
+  font-size: 16px;
+  text-transform: capitalize;  
+}

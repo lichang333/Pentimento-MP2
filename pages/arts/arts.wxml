@@ -1,11 +1,10 @@
 <view class="body">
   <block wx:for='{{ artworks }}'>
     <view class="flex-item">
-      <view style="text-align:center; color:#f0f0f0; font-size:105%">{{item.title}}</view>
       <view bindtap="showArtdetail" data-id='{{item.id}}'class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+      <view class="art-title">{{item.title}}</view>
+      <view class="art-description">{{item.description}}</view>
       </view>
-      
-      <view margin-bottom="250rpx" class="card-desc">{{item.description}}</view>
     </view>
   </block>
 </view>
