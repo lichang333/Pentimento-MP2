@@ -18,4 +18,4 @@
 
 <!-- <button class="float" bindtap=""><i src="{{src}}"></i></button> -->
 
-<button class="float" bindtap="callQRcode"><i src="{{src}}"></i></button>
+<!-- <button class="float" bindtap="callQRcode"><i src="{{src}}"></i></button> -->
