@@ -93,5 +93,12 @@ Page({
       wx.redirectTo({
         url: '/pages/galleries/galleries'
       })}, 850);
+  },
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo 
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
   }
 })

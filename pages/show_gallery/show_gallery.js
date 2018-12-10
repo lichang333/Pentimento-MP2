@@ -17,7 +17,7 @@ Page({
     let that = this;
     console.log('making request')
     wx.request({
-      url: `http://192.168.50.99:3000/api/v1/arts/${options.id}`,
+      url: `http://192.168.50.99:3002/api/v1/galleries/${options.id}`,
       method: 'GET',
       success(res) {
         console.log(res);
