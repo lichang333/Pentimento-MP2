@@ -1,100 +1,85 @@
-// pages/workspaces/arts.js
-let app = getApp()
-
+// pages/show_gallery/show_gallery.js
 Page({
-  data: {
-    items: [
-      { name: '', value: '' }
-    ]
-  },
-  showModal: function (e) {
-    console.log(333,"show modal")
-    var showName = e.currentTarget.dataset.modal;
-    console.log(444,showName)
-    this.setData({
-      modalName: showName
-    })
-  },
-  closeModal: function (e) {
-    console.log(5555555,'close modal')
-    this.setData({
-      modalName: null
-    })
-  },
 
+  /**
+   * Page initial data
+   */
   data: {
 
   },
 
-  activeShowModal: function (e) {
-    console.log(3333,e)
-    const id = e.currentTarget.dataset.id
-    const title = e.currentTarget.dataset.title
-    const description = e.currentTarget.dataset.description
-    console.log(description)
-    console.log(`Click at item id : ${id}`)
-    
-    wx.showModal({
-      title: `${title}`,
-      content: `${description}`,
-    })
-  },
-
+  /**
+   * Lifecycle function--Called when page load
+   */
   onLoad: function (options) {
-    let page = this;
+    this.setData({ artworksId: options.id })
 
-    
-
-    //Request API to get workspace
+    let that = this;
+    console.log('making request')
     wx.request({
-      url: "http://192.168.50.99:3000/api/v1/arts/",
+      url: `http://192.168.50.99:3002/api/v1/galleries/${options.id}`,
       method: 'GET',
       success(res) {
-        const artworks = res.data;
-        console.log(3242342, artworks);
-        page.setData({
-          artworks: artworks
+        console.log(res);
+        const art = res.data;
+        that.setData({
+          art
         });
-
         wx.hideToast();
+        console.log(art);
+      },
+      fail(res) {
+        console.log(res)
       }
     });
-
   },
 
+  /**
+   * Lifecycle function--Called when page is initially rendered
+   */
   onReady: function () {
 
   },
 
+  /**
+   * Lifecycle function--Called when page show
+   */
   onShow: function () {
 
   },
 
+  /**
+   * Lifecycle function--Called when page hide
+   */
   onHide: function () {
 
   },
 
+  /**
+   * Lifecycle function--Called when page unload
+   */
   onUnload: function () {
 
   },
 
+  /**
+   * Page event handler function--Called when user drop down
+   */
   onPullDownRefresh: function () {
 
   },
 
+  /**
+   * Called when page reach bottom
+   */
   onReachBottom: function () {
 
   },
 
+  /**
+   * Called when user click on the top right corner to share
+   */
   onShareAppMessage: function () {
 
-  },
-  showArtdetail(e) {
-    const artworksId = e.currentTarget.dataset.id;
-    console.log(artworksId);
-
-    wx.navigateTo({
-      url: `/pages/art_details/art_details?id=${artworksId}`,
-    });
   }
 })
