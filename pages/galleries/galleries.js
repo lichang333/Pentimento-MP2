@@ -13,7 +13,7 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: "http://192.168.50.99:3002/api/v1/galleries",
+      url: "http://penti-api.wogengapp.cn/api/v1/galleries",
       method: 'GET',
       success(res) {
         const galleries = res.data;
