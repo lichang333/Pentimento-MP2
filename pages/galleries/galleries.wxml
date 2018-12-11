@@ -12,8 +12,8 @@
 
 <view style='display:flex; padding: 23rpx;' >
   <view style='padding-left:70rpx;' />
-  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Top 10</view>
-  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Galleries</view>
+  <view style='color:white; font-weight:500; font-size: 53rpx; border-right:1rpx solid white; padding-right:25rpx;'>Top 10</view>
+  <view style='color:white; font-weight:100; font-size: 83rpx; padding-left:25rpx; padding-top:40rpx;'>Galleries</view>
   </view>
 
 <!-- Add Logic, if not gallereies display this message -->

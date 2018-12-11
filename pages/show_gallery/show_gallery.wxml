@@ -1,12 +1,13 @@
 <image bindtap="enlargeImage" data-src='{{ gallery.photo }}' src='{{ gallery.photo }}'></image>
 
-<view>{{ gallery.name }}</view>
-<view>Address: {{ gallery.address }}</view>
-<view>Phone Number: {{ gallery.phone_number }}</view>
-<view>Description: {{ gallery.description }}</view>
+<view class="gallery-summary" >
+<!-- <view>{{ gallery.name }}</view> -->
+<view class="gallery-infos" style='margin-bottom:18rpx;'> Address: {{ gallery.address }}</view>
+<view class="gallery-infos">Tel: {{ gallery.phone_number }}</view>
+<!-- <view class="gallery-infos">Description: {{ gallery.description }}</view> -->
+</view>
 
-
-<h1 class="align-center">Gallery Art Pieces</h1>
+<!-- <h1 class="align-center">Gallery Art Pieces</h1> -->
 <view class="body">
 
   <!-- Block for Artwork items -->
