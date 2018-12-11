@@ -64,13 +64,20 @@ button {
 }
 
 .btn{
+  background: transparent;
+  border: 2px solid #FAF9F9;
   display: flex;
   margin-top: 120%;
-  padding: 10px 15px;
   font-size: 20px;
+  font-weight: 200;
   line-height: 1.3333333;
-  border-radius: 5px;
-  opacity: 0.95;
+  border-radius: 10px;
+  opacity: 0.76;
+  padding: 12px 35px;  
+}
+.btn_hover {
+  opacity: 0.80;
+  border: 2px solid white;
 }
 
 .animation-fade {
