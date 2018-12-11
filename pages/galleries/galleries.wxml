@@ -1,6 +1,20 @@
 <!--pages/galleries/galleries.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items='1' circular previous-margin="130rpx" next-margin="130rpx">
+  
+  <block wx:for="{{banners}}">
+    <swiper-item >
+      <view bindtap="gotoLink" data-link="{{item.link}}" style='width:430rpx; height:250rpx; border-radius:20rpx; background-image: url({{item.imageUrl}});  background-position: center; background-repeat: no-repeat; background-size: cover;'>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
 
-<view class="title">Your Galleries</view>
+<view style='display:flex; padding: 23rpx;' >
+  <view style='padding-left:70rpx;' />
+  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Top 10</view>
+  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Galleries</view>
+  </view>
 
 <!-- Add Logic, if not gallereies display this message -->
 
