@@ -6,10 +6,18 @@ Page({
    */
   data: {
     src: '../../lib/assets/plus-solid.png',
-    imgUrls: [
-      'http://pentimento-mp.ellerystars.xyz/img/banner.jpg',
-      'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg',
-      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    banners: [ 
+      { 
+        link: '/pages/index/index',
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/banner.jpg'
+      }, {
+        link: '/pages/index/index',
+        imageUrl: 'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg'
+      }, {
+        link: '/pages/index/index',
+        imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+      }
+      
     ],
     indicatorDots: false,
     autoplay: false,
@@ -99,5 +107,13 @@ Page({
         console.log(res)
       }
     });
+  },
+  gotoLink: function(e) {
+    console.log(333,e)
+    let link = e.currentTarget.dataset.link
+
+    wx.navigateTo({
+      url: link,
+    })
   }
 })
