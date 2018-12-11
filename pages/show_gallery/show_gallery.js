@@ -24,6 +24,9 @@ Page({
         page.setData({
           gallery
         });
+        wx.setNavigationBarTitle({
+          title: gallery.name,
+        });
         wx.hideToast();
         console.log(gallery);
       }
