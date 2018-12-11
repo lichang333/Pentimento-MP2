@@ -1,4 +1,14 @@
 <!--pages/galleries/galleries.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items='1' circular previous-margin="130rpx" next-margin="130rpx">
+  
+  <block wx:for="{{imgUrls}}">
+    <swiper-item >
+      <view style='width:430rpx; height:250rpx; border-radius:20rpx; background-image: url({{item}});  background-position: center; background-repeat: no-repeat; background-size: cover;'>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
 
 <view class="title">Your Galleries</view>
 

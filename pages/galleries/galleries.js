@@ -6,6 +6,17 @@ Page({
    */
   data: {
     src: '../../lib/assets/plus-solid.png',
+    imgUrls: [
+      'http://pentimento-mp.ellerystars.xyz/img/banner.jpg',
+      'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg',
+      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 5000,
+    duration: 1000,
+    toView: 'red',
+    scrollTop: 100
   },
 
   onLoad: function (options) {
