@@ -400,3 +400,14 @@ h1 {
   font-size: 16px;
   text-transform: capitalize;  
 }
+.gallery-summary{
+  background: #7C8F9E;
+  color: white;
+  margin: 35rpx;
+  padding: 50rpx;
+  border-radius: 12px;
+}
+
+.gallery-infos{
+  
+}
