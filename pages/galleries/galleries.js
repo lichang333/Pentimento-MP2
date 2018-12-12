@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    src: '../../lib/assets/plus-solid.png',
+    src: '../../assets/images/lock.png',
     banners: [ 
       { 
         link: '/pages/index/index',
@@ -14,7 +14,7 @@ Page({
         link: '/pages/index/index',
         imageUrl: 'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg'
       }, {
-        link: '/pages/index/index',
+        link: '/pages/show_artists/show_artists',
         imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
       }
       
@@ -36,9 +36,14 @@ Page({
       method: 'GET',
       success(res) {
         const galleries = res.data;
+        // Delete when change mock
+        galleries[1].locked = true;
+        galleries[1].pin = '1234';
+        // Delete when change mock
         page.setData({
           galleries: galleries
         });
+        console.log(333333,galleries)
 
         wx.hideToast();
       }
