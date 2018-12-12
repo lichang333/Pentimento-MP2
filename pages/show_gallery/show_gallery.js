@@ -34,7 +34,7 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: `http://penti-api.wogengapp.cn/api/v1/galleries/${options.id}/arts`,
+      url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}/arts`,
       method: 'GET',
       success(res) {
         const artworks = res.data;
