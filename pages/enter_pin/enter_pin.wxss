@@ -71,14 +71,14 @@ button {
 .btn{
   background: transparent;
   border: 2px solid #FAF9F9;
-  display: flex;
+  /* display: flex; */
   margin-top: 120%;
   font-size: 20px;
   font-weight: 200;
   line-height: 1.3333333;
   border-radius: 10px;
   opacity: 0.76;
-  padding: 12px 35px;  
+  padding: 8px 32px;
 }
 .btn_hover {
   opacity: 0.80;
@@ -93,4 +93,9 @@ button {
 
 .animation-reverse {
     animation-direction: reverse
+}
+
+.input-box{
+  color:white !important; 
+  font-weight: 100;
 }
