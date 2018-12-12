@@ -14,9 +14,10 @@ Page({
     console.log(this)
     this.toggle(e)
 
-    const galleryId = e.currentTarget.dataset.id;
-    console.log(galleryId);
-
+    let galleryId = this.data.galleryId
+    
+    console.log(99999, e)
+    let id = e.currentTarget.dataset.id
     setTimeout(() => {
       wx.navigateTo({
         url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
