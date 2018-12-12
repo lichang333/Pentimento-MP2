@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    src: '../../assets/images/lock.png',
+    src: 'http://pentimento-mp.ellerystars.xyz/img/locker/locker3.png',
     banners: [ 
       { 
         link: '/pages/index/index',
@@ -15,7 +15,7 @@ Page({
         imageUrl: 'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg'
       }, {
         link: '/pages/show_artists/show_artists',
-        imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg'
       }
       
     ],
@@ -36,10 +36,7 @@ Page({
       method: 'GET',
       success(res) {
         const galleries = res.data;
-        // Delete when change mock
-        galleries[1].locked = true;
-        galleries[1].pin = '1234';
-        // Delete when change mock
+
         page.setData({
           galleries: galleries
         });

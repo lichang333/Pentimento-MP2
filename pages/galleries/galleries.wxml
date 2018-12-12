@@ -23,8 +23,8 @@
     <view class="flex-item">
       <view style="text-align:center; color:#f0f0f0; font-size:105%">{{item.title}}</view>
         
-          <view bindtap="showGallery" data-id='{{item.id}}' class="card;" style="display: flex; background-image: linear-gradient({{ !item.locked ? 'rgba(0,0,0,0.3), rgba(0,0,0,0.2))' : 'rgba(0,0,0,2), rgba(0,0,0,0.45))' }}, url( {{ item.photo }} );">
-                <view wx:if="{{item.locked}}"><image style="height:100rpx; width:100rpx; justify-content:center; align-items:center;" src="{{src}}"></image></view>
+          <view bindtap="showGallery" data-id='{{item.id}}' class="card;" style="display: flex; align-items:center; background-image: linear-gradient({{ !item.locked ? 'rgba(0,0,0,0.3), rgba(0,0,0,0.2))' : 'rgba(0,0,0,0.3), rgba(0,0,0,0.5))' }}, url( {{ item.photo }} );">
+                <view wx:if="{{item.locked}}"><image style="height:100rpx; width:100rpx" src="{{src}}"></image></view>
           </view>
           
           <view margin-bottom="250rpx" class="card-desc">{{item.name}} 
