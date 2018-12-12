@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    src: '../../lib/assets/plus-solid.png',
+    src: 'http://pentimento-mp.ellerystars.xyz/img/locker/locker3.png',
     banners: [ 
       { 
         link: '/pages/index/index',
@@ -14,8 +14,8 @@ Page({
         link: '/pages/index/index',
         imageUrl: 'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg'
       }, {
-        link: '/pages/index/index',
-        imageUrl: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+        link: '/pages/show_artists/show_artists',
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg'
       }
       
     ],
@@ -32,13 +32,15 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: "http://penti-api.wogengapp.cn/api/v1/galleries",
+      url: "https://penti-api.wogengapp.cn/api/v1/galleries",
       method: 'GET',
       success(res) {
         const galleries = res.data;
+
         page.setData({
           galleries: galleries
         });
+        console.log(333333,galleries)
 
         wx.hideToast();
       }
@@ -100,6 +102,26 @@ Page({
     wx.navigateTo({
       url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
     });
+  },
+  enterPin: (e) => {
+    wx.showModal({
+      title: 'Contact Info',
+      content: '1821-394-2132',
+      cancelText: 'Back',
+      confirmText: 'Unlock',
+      success(res) {
+        if (res.confirm) {
+          const galleryId = e.currentTarget.dataset.id;
+          console.log(galleryId);
+
+          wx.navigateTo({
+            url: `/pages/enter_pin/enter_pin?id=${galleryId}`,
+          });
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   },
   callQRcode: function () {
     wx.scanCode({

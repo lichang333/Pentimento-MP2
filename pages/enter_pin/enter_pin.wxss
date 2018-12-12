@@ -1,0 +1,96 @@
+/* pages/enter_pin/enter_pin.wxss */
+@import "../../icon.wxss";
+@import "../../colorui.wxss";
+
+page {
+  background-color: #66747F;
+}
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animation-reverse {
+  animation-direction: reverse;
+}
+
+[class*=animation-] {
+  animation-duration: .5s;
+  animation-timing-funciton: ease-out;
+  animation-fill-mode: both;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner text {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 22px;
+  line-height: 1.3333333;
+  border-radius: 2px;
+}
+
+.btn{
+  background: transparent;
+  border: 2px solid #FAF9F9;
+  display: flex;
+  margin-top: 120%;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.3333333;
+  border-radius: 10px;
+  opacity: 0.76;
+  padding: 12px 35px;  
+}
+.btn_hover {
+  opacity: 0.80;
+  border: 2px solid white;
+}
+
+.animation-fade {
+    animation-name: fade;
+    animation-duration: .8s;
+    animation-timing-function: linear
+}
+
+.animation-reverse {
+    animation-direction: reverse
+}

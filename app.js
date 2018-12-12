@@ -1,7 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
-    const host = "http://192.168.50.99:3005/"
+    const host = "https://penti-api.wogengapp.cn/"
     console.log('processing login')
 
     // 展示本地存储能力
