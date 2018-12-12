@@ -18,7 +18,7 @@
 
 <!-- Add Logic, if not gallereies display this message -->
 
-<view class="body">
+<view class="body" style="margin-bottom:28px;">
   <block wx:for='{{ galleries }}'>
     <view class="flex-item">
       <view style="text-align:center; color:#f0f0f0; font-size:105%">{{item.title}}</view>
