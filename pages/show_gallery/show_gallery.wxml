@@ -27,7 +27,7 @@
     <view class="flex-item">
       <view bindtap="enlargeImage" data-src="{{ item.photo }}" data-modal="defualtmodal" data-id='{{item.id}}' data-description='{{item.description}}' data-title='{{item.title}}' class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
         <view class="art-title">{{item.title}}</view>
-        <view class="art-description">{{item.description}}</view>
+        <!-- <view class="art-description">{{item.description}}</view> -->
 
       </view>
     </view>

@@ -103,6 +103,26 @@ Page({
       url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
     });
   },
+  enterPin: (e) => {
+    wx.showModal({
+      title: 'Contact Info',
+      content: '1821-394-2132',
+      cancelText: 'Back',
+      confirmText: 'Unlock',
+      success(res) {
+        if (res.confirm) {
+          const galleryId = e.currentTarget.dataset.id;
+          console.log(galleryId);
+
+          wx.navigateTo({
+            url: `/pages/enter_pin/enter_pin?id=${galleryId}`,
+          });
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
   callQRcode: function () {
     wx.scanCode({
       success: (res) => {
