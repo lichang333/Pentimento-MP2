@@ -26,7 +26,7 @@ Page({
 
       let galleryId = this.data.galleryId
 
-      wx.navigateTo({
+      wx.redirectTo({
         url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
       });
 
