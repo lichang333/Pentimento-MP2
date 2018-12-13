@@ -15,7 +15,7 @@ Page({
         imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/mock/poster6.jpg'
       }, {
         link: '/pages/show_artists/show_artists',
-        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg'
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/preview-img/wangechi-mutu.png'
       }
       
     ],
@@ -65,17 +65,19 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-    const galleries = this.data.galleries;
-    const authorizedGalleries = wx.getStorageSync("authorizedGalleries")
+    if (this.data.galleries) {
+      const galleries = this.data.galleries;
+      const authorizedGalleries = wx.getStorageSync("authorizedGalleries")
 
-    galleries.forEach((gallery) => {
-      if (authorizedGalleries.includes(gallery.id)) {
-        gallery.locked = false
-      }
-    })
-    this.setData({
-      galleries
-    });
+      galleries.forEach((gallery) => {
+        if (authorizedGalleries.includes(gallery.id)) {
+          gallery.locked = false
+        }
+      })
+      this.setData({
+        galleries
+      });
+    }
   },
 
   /**
