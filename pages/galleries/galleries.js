@@ -65,7 +65,17 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    const galleries = this.data.galleries;
+    const authorizedGalleries = wx.getStorageSync("authorizedGalleries")
 
+    galleries.forEach((gallery) => {
+      if (authorizedGalleries.includes(gallery.id)) {
+        gallery.locked = false
+      }
+    })
+    this.setData({
+      galleries
+    });
   },
 
   /**
