@@ -36,9 +36,16 @@ Page({
       method: 'GET',
       success(res) {
         const galleries = res.data;
+        const authorizedGalleries = wx.getStorageSync("authorizedGalleries")
+
+        galleries.forEach ((gallery) => {
+          if (authorizedGalleries.includes(gallery.id)) {
+            gallery.locked = false
+          }
+        })
 
         page.setData({
-          galleries: galleries
+          galleries
         });
         console.log(333333,galleries)
 

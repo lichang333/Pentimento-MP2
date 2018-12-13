@@ -7,22 +7,40 @@ Page({
   data: {
     button: {
       name: 'fade',
-      color: 'primary'
+      color: 'primary',
+      inputValue: ''
     }
   },
+  bindKeyInput: function (e) {
+    console.log(e)
+    this.setData({
+      inputValue: e.detail.value
+    });
+  },
   goToGalleryPage: function (e) {
-    console.log(this)
-    this.toggle(e)
+  
+    if (this.data.inputValue === this.data.gallery.pin) {
+      const authorizedGalleries = wx.getStorageSync("authorizedGalleries") || []
+      authorizedGalleries.push(this.data.gallery.id)
+      wx.setStorageSync("authorizedGalleries", authorizedGalleries)
+    } else {
+      wx.showToast({
+        title: 'Incorrect Pin'
+      })
+    }
 
-    let galleryId = this.data.galleryId
-    
-    console.log(99999, e)
-    let id = e.currentTarget.dataset.id
-    setTimeout(() => {
-      wx.navigateTo({
-        url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
-      });
-    }, 850);
+    // setTimeout(() => {
+    //   wx.navigateTo({
+    //     url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
+    //   });
+    // }, 850);
+
+    // if (condition) {
+
+    // } else {
+    //   block of code to be executed if the condition is false
+    // }
+
   },
   toggle: function (e) {
     console.log(e);
