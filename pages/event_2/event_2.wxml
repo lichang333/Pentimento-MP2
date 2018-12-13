@@ -4,7 +4,7 @@
 <!-- Heaher -->
 <view style='display:flex; padding: 23rpx;' >
   <view style='padding-left:40rpx;' />
-  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Poster</view>
+  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Design</view>
   <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Chengdu Subway</view>
   </view>
 <!-- <view style="text-align:center;">Gallery Art Pieces</view> -->
