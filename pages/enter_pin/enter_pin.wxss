@@ -76,7 +76,7 @@ button {
   font-size: 20px;
   font-weight: 200;
   line-height: 1.3333333;
-  border-radius: 10px;
+  border-radius: 29px;
   opacity: 0.76;
   padding: 7px 42px;
 }

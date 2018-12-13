@@ -9,10 +9,10 @@ Page({
     banners: [ 
       { 
         link: '/pages/event_1/event_1',
-        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/mock/poster5.jpg'
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/preview-img/jazz.png'
       }, {
         link: '/pages/event_2/event_2',
-        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/mock/poster6.jpg'
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/preview-img/panda.png'
       }, {
         link: '/pages/show_artists/show_artists',
         imageUrl: 'http://pentimento-mp.ellerystars.xyz/preview-img/wangechi-mutu.png'
@@ -124,7 +124,7 @@ Page({
   },
   enterPin: (e) => {
     wx.showModal({
-      title: 'Contact Info',
+      title: 'Gallery Contact Info',
       content: '1821-394-2132',
       cancelText: 'Back',
       confirmText: 'Unlock',
