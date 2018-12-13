@@ -7,6 +7,8 @@
     "pages/art_details/art_details",
     "pages/show_artists/show_artists",
     "pages/enter_pin/enter_pin",
+    "pages/event_1/event_1",
+    "pages/event_2/event_2",
     "pages/logs/logs"
   ],
   "window":{

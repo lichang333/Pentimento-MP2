@@ -12,7 +12,7 @@
 
 <view style='display:flex; padding: 23rpx;' >
   <view style='padding-left:70rpx;' />
-  <view style='color:white; font-weight:500; font-size: 53rpx; border-right:1rpx solid white; padding-right:25rpx;'>Top 10</view>
+  <view style='color:white; font-weight:500; font-size: 53rpx; border-right:1rpx solid white; padding-right:25rpx;'>Top 5</view>
   <view style='color:white; font-weight:100; font-size: 83rpx; padding-left:25rpx; padding-top:40rpx;'>Galleries</view>
   </view>
 
@@ -22,14 +22,13 @@
   <block wx:for='{{ galleries }}'>
     <view class="flex-item">
       <view style="text-align:center; color:#f0f0f0; font-size:105%">{{item.title}}</view>
+      
         
           <view bindtap="{{ !item.locked ? 'showGallery' : 'enterPin'}}" data-id='{{item.id}}' class="card;" style="display: flex; align-items:center; background-image: linear-gradient({{ !item.locked ? 'rgba(0,0,0,0.3), rgba(0,0,0,0.2))' : 'rgba(0,0,0,0.3), rgba(0,0,0,0.5))' }}, url( {{ item.photo }} );">
                 <view wx:if="{{item.locked}}"><image style="height:100rpx; width:100rpx" src="{{src}}"></image></view>
           </view>
           
-          <view margin-bottom="250rpx" class="card-desc">{{item.name}} 
-          
-      </view>
+    <view margin-bottom="250rpx" class="card-desc">{{item.name}} </view>
       
     </view>
   </block>

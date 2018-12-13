@@ -1,0 +1,36 @@
+<image bindtap="enlargeImage" mode='aspectFill' style='width:100%; height:550rpx;' src='http://pentimento-mp.ellerystars.xyz/img/mock/poster6.jpg'></image>
+
+
+<!-- Heaher -->
+<view style='display:flex; padding: 23rpx;' >
+  <view style='padding-left:40rpx;' />
+  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Interview</view>
+  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Roman Signer</view>
+  </view>
+<!-- <view style="text-align:center;">Gallery Art Pieces</view> -->
+<!-- Header -->
+
+<!-- Body -->
+<view class="body" style="margin: 15rpx; margin-top: 32rpx;">
+
+<!-- Artists description   -->
+  <text class="artists_desc">Roman Signer (born 1985 in Appenzell, Switzerland) is principally a visual artist who works in sculpture, art installations photography, and video.\n</text>
+  <view class = "h3">Awards</view>
+  <view style='padding-left:20rpx;'>
+    <text class = "artists_desc">
+    • 2010 Prix Meret Oppenheim
+    • 2008 Finalist for the Hugo Boss Prize
+    • 2008 Ernst-Franz-Vogelmann-Preis für Skulptur
+    • 2006 Kunstpreis Aachen
+    • 2004 Kulturpreis der Stadt St. Gallen
+    • 1998 Konstanzer Kunstpreis
+    • 1998 Kulturpreis St. Gallen
+    • 1998 Kulturpreis Konstanz
+    • 1995 Kulturpreis Bregenz
+    • 1977 Eidgenössisches Kunststipendium
+    • 1972 Kiefer-Hablitzel Stipendium</text>
+  </view>
+  
+<!-- Artists description  END -->
+
+</view>

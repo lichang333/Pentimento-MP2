@@ -13,20 +13,20 @@ Page({
   },
 
   onLoad: function (options) {
-    this.setData({galleryId: options.id})
+    // this.setData({ galleryId: options.id })
     let page = this;
 
     wx.request({
-      url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}`,
+      // url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}`,
       method: 'GET',
       success(res) {
         const gallery = res.data;
         page.setData({
           gallery
         });
-        // wx.setNavigationBarTitle({
-        //   title: gallery.name,
-        // });
+        wx.setNavigationBarTitle({
+          title: gallery.name,
+        });
         wx.hideToast();
         console.log(gallery);
       }
@@ -34,11 +34,10 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}/arts`,
+      // url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}/arts`,
       method: 'GET',
       success(res) {
         const artworks = res.data;
-        console.log(3242342, artworks);
         page.setData({
           artworks: artworks
         });
@@ -48,10 +47,6 @@ Page({
     });
 
   },
-
-  // wx.makePhoneCall({
-  //   phoneNumber: '1340000' // 仅为示例，并非真实的电话号码
-  // })
 
   onReady: function () {
 
@@ -85,15 +80,15 @@ Page({
     console.log(artworksId);
 
     wx.navigateTo({
-      url: `/pages/art_details/art_details?id=${artworksId}`,
+      // url: `/pages/art_details/art_details?id=${artworksId}`,
     });
   },
   enlargeImage: function (e) {
-    console.log(3333,e)
+    console.log(3333, e)
     let src = e.currentTarget.dataset.src
     wx.previewImage({
       current: src,
-      urls: [src]
-      });
+      urls: ['http://pentimento-mp.ellerystars.xyz/img/mock/poster6.jpg']
+    });
   }
 })

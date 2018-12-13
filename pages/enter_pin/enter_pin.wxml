@@ -3,8 +3,10 @@
   <view class="banner-content" >
     <text class="h1" style="opacity:0.95;font-size: 40px; font-weight:385; "></text>
     
-    <text class="subtitle" style="opacity:0.68;font-size: 20px;">\nEnter Your Pin</text>
-    <input type="password" name="pin" placeholder="please input here"/>
+    <!-- <text class="subtitle" style="opacity:0.68;font-size: 20px;">\nEnter Your Pin</text> -->
+    <view style='border: 1rpx solid white; border-radius: 6px; padding: 8px 16px; opacity: 0.75;'>
+      <input placeholder-class="input-box" style="opacity:0.88;font-size: 18px; " type="password" name="pin" placeholder="Please Enter PIN Here"/>
+    </view>
     
     <button bindtap="goToGalleryPage" class="primary btn animation-{{animation==button.name? button.name :''}} animation-reverse m-sm basis-sm" data-class="{{button.name}}">Submit</button>
   </view>
