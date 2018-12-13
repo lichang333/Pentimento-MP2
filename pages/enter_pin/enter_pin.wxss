@@ -78,7 +78,7 @@ button {
   line-height: 1.3333333;
   border-radius: 10px;
   opacity: 0.76;
-  padding: 8px 32px;
+  padding: 7px 42px;
 }
 .btn_hover {
   opacity: 0.80;
