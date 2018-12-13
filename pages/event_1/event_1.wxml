@@ -4,8 +4,8 @@
 <!-- Heaher -->
 <view style='display:flex; padding: 23rpx;' >
   <view style='padding-left:40rpx;' />
-  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Interview</view>
-  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Roman Signer</view>
+  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Event</view>
+  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>North Sea Jazz Art</view>
   </view>
 <!-- <view style="text-align:center;">Gallery Art Pieces</view> -->
 <!-- Header -->
@@ -14,22 +14,16 @@
 <view class="body" style="margin: 15rpx; margin-top: 32rpx;">
 
 <!-- Artists description   -->
-  <text class="artists_desc">Roman Signer (born 1985 in Appenzell, Switzerland) is principally a visual artist who works in sculpture, art installations photography, and video.\n</text>
-  <view class = "h3">Awards</view>
-  <view style='padding-left:20rpx;'>
-    <text class = "artists_desc">
-    • 2010 Prix Meret Oppenheim
-    • 2008 Finalist for the Hugo Boss Prize
-    • 2008 Ernst-Franz-Vogelmann-Preis für Skulptur
-    • 2006 Kunstpreis Aachen
-    • 2004 Kulturpreis der Stadt St. Gallen
-    • 1998 Konstanzer Kunstpreis
-    • 1998 Kulturpreis St. Gallen
-    • 1998 Kulturpreis Konstanz
-    • 1995 Kulturpreis Bregenz
-    • 1977 Eidgenössisches Kunststipendium
-    • 1972 Kiefer-Hablitzel Stipendium</text>
-  </view>
+<view style='padding-left:20rpx;'>
+  <text class="artists_desc" style="font-weight: bold; font-size: 16px;">By now the artposter has become a yearly recurring element of the festival. The first artposter dates back to 1981 and was designed by Rafal Olbinski.\n</text>
+</view>
+  <view style='padding:25rpx;'>
+    <text class = "artists_desc">Since moving to Rotterdam in 2006, the poster is chosen from an annual competition for students of the Willem de Kooning Academy in Rotterdam. The winning design gets printed and the works of the other the finalists will be exhibited at the festival.
+</text>
+</view>
+
+<view style='padding:25rpx;'><text class = "artists_desc">Below you will find an overview of all art posters that have appeared at the North Sea Jazz Festival throughout the years (with the exemption of the years 1983-1986, no art poster appeared on these editions).</text>
+</view>
   
 <!-- Artists description  END -->
 
