@@ -4,8 +4,8 @@
 <!-- Heaher -->
 <view style='display:flex; padding: 23rpx;' >
   <view style='padding-left:40rpx;' />
-  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Interview</view>
-  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Roman Signer</view>
+  <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Poster</view>
+  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Chengdu Subway</view>
   </view>
 <!-- <view style="text-align:center;">Gallery Art Pieces</view> -->
 <!-- Header -->
@@ -13,23 +13,25 @@
 <!-- Body -->
 <view class="body" style="margin: 15rpx; margin-top: 32rpx;">
 
-<!-- Artists description   -->
-  <text class="artists_desc">Roman Signer (born 1985 in Appenzell, Switzerland) is principally a visual artist who works in sculpture, art installations photography, and video.\n</text>
-  <view class = "h3">Awards</view>
-  <view style='padding-left:20rpx;'>
-    <text class = "artists_desc">
-    • 2010 Prix Meret Oppenheim
-    • 2008 Finalist for the Hugo Boss Prize
-    • 2008 Ernst-Franz-Vogelmann-Preis für Skulptur
-    • 2006 Kunstpreis Aachen
-    • 2004 Kulturpreis der Stadt St. Gallen
-    • 1998 Konstanzer Kunstpreis
-    • 1998 Kulturpreis St. Gallen
-    • 1998 Kulturpreis Konstanz
-    • 1995 Kulturpreis Bregenz
-    • 1977 Eidgenössisches Kunststipendium
-    • 1972 Kiefer-Hablitzel Stipendium</text>
-  </view>
+<!-- Description Title -->
+<view style='padding-left:20rpx;'>
+  <text class="artists_desc" style="font-weight: bold; font-size: 16px;">Categories\n</text>
+  <text class="artists_desc" style="font-weight: 100; font-size: 14px;">Visual Communication Design\n</text>
+</view>
+<view style='padding-left:20rpx;'>
+  <text class="artists_desc" style="font-weight: bold; font-size: 16px;">Manufacturer \n</text>
+  <text class="artists_desc" style="font-weight: 100; font-size: 14px;">Chengdu Rail Transit Co., Ltd. , China\n</text>
+</view>
+<view style='padding-left:20rpx;'>
+  <text class="artists_desc" style="font-weight: bold; font-size: 16px;">Design Company\n</text>
+  <text class="artists_desc" style="font-weight: 1001; font-size: 14px;">Dongdao Creative Branding Group Co., Ltd.\n</text>
+</view>
+
+<!-- Content -->
+  <view style='padding:25rpx;'>
+    <text class = "artists_desc">In our poster design, it was important to give a strong, memorable impression that would pack a punch with international and domestic tourists at first sight. After a great deal of research and analysis, we extracted the four featured elements: pandas, hotpot, covered tea bowls (representative of local tea culture), and the Broad and Narrow Alley neighborhood, to showcase the cultural characteristics of Chengdu. We then brought those features to life through abstract freehand illustrations.
+</text>
+</view>
   
 <!-- Artists description  END -->
 

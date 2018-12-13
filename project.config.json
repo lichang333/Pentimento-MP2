@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -54,7 +54,20 @@
 				{
 					"id": -1,
 					"name": "Pin page",
-					"pathName": "pages/enter_pin/enter_pin"
+					"pathName": "pages/enter_pin/enter_pin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Event_1",
+					"pathName": "pages/event_1/event_1",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Event_2",
+					"pathName": "pages/event_2/event_2",
+					"query": ""
 				}
 			]
 		}
