@@ -122,10 +122,10 @@ Page({
       url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
     });
   },
-  enterPin: (e) => {
+  enterPin (e) {
     wx.showModal({
-      title: 'Gallery Contact Info',
-      content: '1821-394-2132',
+      title: "Contact: " + this.data.galleries[e.currentTarget.id].phone_number,
+      content: "Address: " + this.data.galleries[e.currentTarget.id].address,
       cancelText: 'Back',
       confirmText: 'Unlock',
       success(res) {
