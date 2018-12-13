@@ -7,46 +7,35 @@ Page({
   data: {
     button: {
       name: 'fade',
-      color: 'primary'
+      color: 'primary',
+      inputValue: ''
     }
   },
+  bindKeyInput: function (e) {
+    console.log(e)
+    this.setData({
+      inputValue: e.detail.value
+    });
+  },
   goToGalleryPage: function (e) {
-    console.log(this)
-    this.toggle(e)
+  
+    if (this.data.inputValue === this.data.gallery.pin) {
+      const authorizedGalleries = wx.getStorageSync("authorizedGalleries") || []
+      authorizedGalleries.push(this.data.gallery.id)
+      wx.setStorageSync("authorizedGalleries", authorizedGalleries)
 
-    let galleryId = this.data.galleryId
-    
-    console.log(99999, e)
-    let id = e.currentTarget.dataset.id
-    setTimeout(() => {
+      let galleryId = this.data.galleryId
+
       wx.navigateTo({
         url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
       });
-    }, 850);
-  },
-  toggle: function (e) {
-    console.log(e);
-    var anmiaton = e.currentTarget.dataset.class;
-    var that = this;
-    that.setData({
-      animation: anmiaton
-    })
-    setTimeout(function () {
-      that.setData({
-        animation: ''
+
+    } else {
+      wx.showToast({
+        title: 'Incorrect Pin',
+        icon: 'none'
       })
-    }, 1000)
-  },
-  toggleDelay: function () {
-    var that = this;
-    that.setData({
-      toggleDelay: true
-    })
-    setTimeout(function () {
-      that.setData({
-        toggleDelay: false
-      })
-    }, 1000)
+    }
   },
 
   /**
