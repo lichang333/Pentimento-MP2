@@ -23,48 +23,19 @@ Page({
       const authorizedGalleries = wx.getStorageSync("authorizedGalleries") || []
       authorizedGalleries.push(this.data.gallery.id)
       wx.setStorageSync("authorizedGalleries", authorizedGalleries)
+
+      let galleryId = this.data.galleryId
+
+      wx.navigateTo({
+        url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
+      });
+
     } else {
       wx.showToast({
-        title: 'Incorrect Pin'
+        title: 'Incorrect Pin',
+        icon: 'none'
       })
     }
-
-    // setTimeout(() => {
-    //   wx.navigateTo({
-    //     url: `/pages/show_gallery/show_gallery?id=${galleryId}`,
-    //   });
-    // }, 850);
-
-    // if (condition) {
-
-    // } else {
-    //   block of code to be executed if the condition is false
-    // }
-
-  },
-  toggle: function (e) {
-    console.log(e);
-    var anmiaton = e.currentTarget.dataset.class;
-    var that = this;
-    that.setData({
-      animation: anmiaton
-    })
-    setTimeout(function () {
-      that.setData({
-        animation: ''
-      })
-    }, 1000)
-  },
-  toggleDelay: function () {
-    var that = this;
-    that.setData({
-      toggleDelay: true
-    })
-    setTimeout(function () {
-      that.setData({
-        toggleDelay: false
-      })
-    }, 1000)
   },
 
   /**
