@@ -1,11 +1,11 @@
-<image mode='aspectFill' style='width:100%; height:550rpx;' src='http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg'></image>
+<image bindtap="enlargeImage" mode='aspectFill' style='width:100%; height:550rpx;' src='http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg'></image>
 
 
 <!-- Heaher -->
 <view style='display:flex; padding: 23rpx;' >
   <view style='padding-left:40rpx;' />
   <view style='color:white; font-weight:500; font-size: 45rpx; border-right:1rpx solid white; padding-right:10rpx;'>Interview</view>
-  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Roman Signer</view>
+  <view style='color:white; font-weight:100; font-size: 65rpx; padding-left:10rpx; padding-top:40rpx;'>Wangechi Mutu</view>
   </view>
 <!-- <view style="text-align:center;">Gallery Art Pieces</view> -->
 <!-- Header -->
@@ -14,7 +14,7 @@
 <view class="body" style="margin: 15rpx; margin-top: 32rpx;">
 
 <!-- Artists description   -->
-  <text class="artists_desc">Roman Signer (born 1985 in Appenzell, Switzerland) is principally a visual artist who works in sculpture, art installations photography, and video.\n</text>
+  <text class="artists_desc">Wangechi Mutu was born in Nairobi, Kenya, in 1972. Mutu’s work explores the interplay between “the real” and fiction, combining ideas found in literature, history, and fables to examine female identity and women’s roles throughout history.\n</text>
   <view class = "h3">Awards</view>
   <view style='padding-left:20rpx;'>
     <text class = "artists_desc">

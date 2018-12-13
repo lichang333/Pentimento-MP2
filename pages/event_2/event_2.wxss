@@ -403,7 +403,7 @@ h1 {
 
 .artists_desc{
   color:white;
-  margin-left: 55rpx;
+  margin-left: 0rpx;
   font-size: 15px;
 }
 

@@ -28,11 +28,11 @@
 </view>
 
 <!-- Content -->
-  <view style='padding:25rpx;'>
-    <text class = "artists_desc">In our poster design, it was important to give a strong, memorable impression that would pack a punch with international and domestic tourists at first sight. After a great deal of research and analysis, we extracted the four featured elements: pandas, hotpot, covered tea bowls (representative of local tea culture), and the Broad and Narrow Alley neighborhood, to showcase the cultural characteristics of Chengdu. We then brought those features to life through abstract freehand illustrations.
-</text>
+
+<view style='padding:25rpx;'>
+  <text class = "artists_desc">In our poster design, it was important to give a strong, memorable impression that would pack a punch with international and domestic tourists at first sight. After a great deal of research and analysis, we extracted the four featured elements: pandas, hotpot, covered tea bowls (representative of local tea culture), and the Broad and Narrow Alley neighborhood, to showcase the cultural characteristics of Chengdu. We then brought those features to life through abstract freehand illustrations.
+  </text>
 </view>
-  
 <!-- Artists description  END -->
 
 </view>

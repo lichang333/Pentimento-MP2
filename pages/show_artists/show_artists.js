@@ -89,7 +89,7 @@ Page({
     let src = e.currentTarget.dataset.src
     wx.previewImage({
       current: src,
-      urls: [src]
+      urls: ['http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg']
     });
   }
 })
