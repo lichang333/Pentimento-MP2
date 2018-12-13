@@ -71,9 +71,9 @@ button {
   font-size: 20px;
   font-weight: 200;
   line-height: 1.3333333;
-  border-radius: 10px;
+  border-radius: 28px;
   opacity: 0.76;
-  padding: 10px 18px;
+  padding: 9px 18px;
 }
 .btn_hover {
   opacity: 0.80;
