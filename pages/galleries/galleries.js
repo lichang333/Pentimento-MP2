@@ -8,11 +8,11 @@ Page({
     src: 'http://pentimento-mp.ellerystars.xyz/img/locker/locker3.png',
     banners: [ 
       { 
-        link: '/pages/index/index',
-        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/banner.jpg'
+        link: '/pages/event_1/event_1',
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/mock/poster5.jpg'
       }, {
-        link: '/pages/index/index',
-        imageUrl: 'http://blog.ellerystars.com/wework_placeholder/chengdu.jpg'
+        link: '/pages/event_2/event_2',
+        imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/mock/poster6.jpg'
       }, {
         link: '/pages/show_artists/show_artists',
         imageUrl: 'http://pentimento-mp.ellerystars.xyz/img/artists/wangechi-mutu/profile.jpg'
