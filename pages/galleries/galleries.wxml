@@ -32,6 +32,7 @@
       
     </view>
   </block>
+  <view class="bottom-spacing"></view>
 </view>
 
 <!-- <button class="float" bindtap=""><i src="{{src}}"></i></button> -->

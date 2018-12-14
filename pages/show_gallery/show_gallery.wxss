@@ -384,14 +384,7 @@ h1 {
   margin-bottom: 65rpx;
 }
 
-.art-title {
-  position: absolute !important;
-  top: 13px;
-  left: 13px;
-  font-size: 23px;
-  text-transform: capitalize;
-  font-weight: bold;
-}
+
 
 .art-description {
   position: absolute !important;
@@ -408,6 +401,27 @@ h1 {
   border-radius: 12px;
 }
 
-.gallery-infos{
-  
+.gallery-infos{ 
+}
+
+.artist_name{
+position:absolute !important;
+top:13px;
+left:13px;
+font-size:16px;
+text-transform:capitalize;
+font-weight:600;
+opacity: 0.65;
+}
+
+.art-title {
+  position: absolute !important;
+  top: 36px;
+  left: 13px;
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.bottom-spacing{
+  padding:6px;
 }

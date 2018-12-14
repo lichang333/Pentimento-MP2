@@ -5,7 +5,7 @@ h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-page {
+Page {
   background-color: #66747F;
 }
 
@@ -195,4 +195,8 @@ page {
   text-align: center !important;
   font-size: 1.3rem;
   font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+.bottom-spacing{
+  padding:6px;
 }
