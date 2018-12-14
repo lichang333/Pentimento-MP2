@@ -11,7 +11,9 @@
 <!-- Address + tel -->
 <view>
   <view class="gallery-infos" style='margin-bottom:18rpx;'> Address: {{ gallery.address }}</view>
-<view class="gallery-infos">Tel: {{ gallery.phone_number }}</view>
+  <!-- <view class="gallery-infos" style='margin-bottom:18rpx;'>Hours of Operation: {{ gallery.hours_operation }}</view> -->
+  <view class="gallery-infos">Tel: {{ gallery.phone_number }}</view>
+
 </view>
 <!-- Address + tel -->
 <!-- <view class="gallery-infos">Description: {{ gallery.description }}</view> -->
@@ -26,7 +28,9 @@
     <!-- Flex item -->
     <view class="flex-item">
       <view bindtap="enlargeImage" data-src="{{ item.photo }}" data-modal="defualtmodal" data-id='{{item.id}}' data-description='{{item.description}}' data-title='{{item.title}}' class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( {{ item.photo }} );">
+        <view class="artist_name">{{item.artist_name}}</view>
         <view class="art-title">{{item.title}}</view>
+
         <view class="art-description">{{item.description}}</view>
 
       </view>
@@ -41,6 +45,7 @@
         <view class="modal-title">
           <text>{{item.title}}</text>
           <view class='bar-close badge danger round' bindtap='closeModal'>
+          
             <text class='iconfont icon-close'></text>
           </view>
         </view>
@@ -57,5 +62,6 @@
 
 </block>
 <!-- Block for Artwork items -->
+<view class="bottom-spacing"></view>
 
 </view>
