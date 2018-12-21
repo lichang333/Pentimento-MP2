@@ -32,8 +32,9 @@
         <view class="art-title">{{item.title}}</view>
 
         <view class="art-description">{{item.description}}</view>
-
+        <image style='width:70rpx; height:70rpx;' bindtap="showArt" src="{{src}}"></image>
       </view>
+      
     </view>
      <!-- Flex item -->
 
@@ -46,7 +47,6 @@
           <text>{{item.title}}</text>
           <view class='bar-close badge danger round' bindtap='closeModal'>
           
-            <text class='iconfont icon-close'></text>
           </view>
         </view>
 
@@ -59,7 +59,6 @@
 
     </view>
     <!-- Modal Box -->
-
 </block>
 <!-- Block for Artwork items -->
 <view class="bottom-spacing"></view>

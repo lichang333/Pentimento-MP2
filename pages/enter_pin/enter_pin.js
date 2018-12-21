@@ -46,7 +46,7 @@ Page({
     let page = this;
 
     wx.request({
-      url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}`,
+      url: `https://pentimento-apis.digitalvio.xyz/api/v1/galleries/${options.id}`,
       method: 'GET',
       success(res) {
         const gallery = res.data;

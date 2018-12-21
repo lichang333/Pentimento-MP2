@@ -3,13 +3,10 @@ let app = getApp()
 
 Page({
   data: {
+    src: '../../assets/images/info_2.png',
     items: [
       { name: '', value: '' }
     ]
-  },
-
-  data: {
-
   },
 
   onLoad: function (options) {
@@ -17,7 +14,7 @@ Page({
     let page = this;
 
     wx.request({
-      url: `https://penti-api.wogengapp.cn/api/v1/galleries/${options.id}`,
+      url: `https://pentimento-apis.digitalvio.xyz/api/v1/galleries/${options.id}`,
       method: 'GET',
       success(res) {
         const gallery = res.data;
@@ -49,6 +46,14 @@ Page({
 
   },
 
+  showArt(e) {
+    const galleryId = e.currentTarget.dataset.id;
+    console.log(galleryId);
+
+    wx.navigateTo({
+      url: `/pages/art_details/art_details?id=${galleryId}`,
+    });
+  },
   // wx.makePhoneCall({
   //   phoneNumber: '1340000' // 仅为示例，并非真实的电话号码
   // })
