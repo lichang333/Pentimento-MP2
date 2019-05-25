@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/galleries/galleries",
     "pages/show_gallery/show_gallery",
@@ -11,10 +11,11 @@
     "pages/event_2/event_2",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#647480",
     "navigationBarTitleText": "",
-    "navigationBarTextStyle":"f0f0f0"
-  }
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
 }

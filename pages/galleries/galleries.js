@@ -32,7 +32,7 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: "https://penti-api.wogengapp.cn/api/v1/galleries",
+      url: "https://pentimento-apis.pentimento-apis.digitalvio.xyz/api/v1/galleries",
       method: 'GET',
       success(res) {
         const galleries = res.data;
