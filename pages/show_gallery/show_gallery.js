@@ -34,7 +34,7 @@ Page({
 
     //Request API to get workspace
     wx.request({
-      url: `https://pentimento-apis.pentimento-apis.digitalvio.xyz/api/v1/galleries/${options.id}/arts`,
+      url: `https://pentimento-apis.pentimento-apis.digitalvio.xyz/api/v1/arts`,
       method: 'GET',
       success(res) {
         const artworks = res.data;
