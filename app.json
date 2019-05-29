@@ -1,5 +1,5 @@
 {
-  "pages": [
+  "pages":[
     "pages/index/index",
     "pages/galleries/galleries",
     "pages/show_gallery/show_gallery",
@@ -11,7 +11,7 @@
     "pages/event_2/event_2",
     "pages/logs/logs"
   ],
-  "window": {
+  "window":{
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#647480",
     "navigationBarTitleText": "",
